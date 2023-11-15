@@ -54,7 +54,8 @@ header > .navigation_container > nav{
     gap:23px;
 }
 
-header > .navigation_container > nav > .logo_container{
+header > .navigation_container > nav > .logo_container,
+footer > .top_footer > aside > .logo_container{
     background: var(--orange);
     height: 54px;
     width: 54px;
@@ -62,6 +63,7 @@ header > .navigation_container > nav > .logo_container{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 header > .navigation_container > nav > .logo_container > img{
@@ -69,7 +71,8 @@ header > .navigation_container > nav > .logo_container > img{
     width:24px;
 }
 
-header > .navigation_container > nav > ul{
+header > .navigation_container > nav > ul,
+footer > .top_footer > .links_container  ul li{
     display: flex;
     align-items: center;
     gap: 20px;
@@ -77,12 +80,19 @@ header > .navigation_container > nav > ul{
     list-style: none;
 }
 
+header > .navigation_container > nav > ul :hover{
+    background-color: rgb(224, 224, 231);
+    padding: 10px;
+    border-radius: 3px;
+}
+
 header > .navigation_container > nav > ul > li > a{
    text-decoration: none;
    color:var(--grey)   
 }
 
-.navigation_container > .buttons_container{
+.navigation_container > .buttons_container,
+footer > .top_footer > aside > .sub_container{
    display: flex;
    align-items: center;
    gap: 30px;
@@ -106,7 +116,7 @@ main{
     padding: 20px 30px 0px 70px ;
     display: flex;
     gap : 60px;
-    border: 2px solid pink;
+    margin-bottom: 100px;
 }
 
 main > .testimonial_container{
@@ -197,6 +207,7 @@ main > .testimonial_container > .bottom_container > .profile_container > .profil
     border-radius: 10px;
     margin-top: 40px;
     background-color: var(--white);
+    /* padding:5px; */
 }
 
 .sign_up_container > .text_container {
@@ -210,6 +221,11 @@ main > .testimonial_container > .bottom_container > .profile_container > .profil
 .sign_up_container > .text_container > .heading{
     font-size: 25px;
     font-weight: bold;
+}
+.sign_up_container > .text_container > .desc{
+    font-size: 12px;
+    margin-top: 10px;
+    color:#565555;
 }
 
 .sign_up_container > .text_container
@@ -232,9 +248,10 @@ main > .testimonial_container > .bottom_container > .profile_container > .profil
 
 .sub_container [type="text"]{
     padding: 20px;
-    border: 1px solid grey;
+    border: 1px solid rgb(213, 211, 211);
     outline: none;
     border-radius: 10px;
+    background-color: #F7F7F8;
 }
 .sub_container > label {
     font-weight: bold;
@@ -244,11 +261,18 @@ main > .testimonial_container > .bottom_container > .profile_container > .profil
     display: flex;
     align-items: center;
     gap:150px;
-    border: 1px solid grey;
+    border: 1px solid rgb(213, 211, 211);
     border-radius: 10px;
+    background-color: #F7F7F8;
 }
 .sub_container > .password_container > input{
     border:none;
+}
+
+form > .main_container > .forgot_password{
+    display: flex;
+    justify-content: flex-end;
+    color:#646363
 }
 
 form > .main_container > .sign_up_btn{
@@ -310,8 +334,64 @@ form > .main_container > .checkbox_container > label > a{
 footer{
     background-color: var(--white);
 }
+
+footer > .top_footer {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 70px;
+}
+
+footer > .top_footer > aside {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    width:750px;
+}
+
+footer > .top_footer > .links_container {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+footer > .top_footer > .links_container  a,
+form > .main_container > .forgot_password > p > a{
+    text-decoration: none;
+    color: grey;
+}
+footer > .top_footer > .links_container > .home,
+footer > .top_footer > .links_container > .about_us ,
+footer > .top_footer > .links_container > .social_profile{
+   height: 100px;
+   width:160px;
+   display: flex;
+   flex-direction: column;
+   gap:20px;
+}
+
+footer > .top_footer > .links_container > .home > ul ,
+footer > .top_footer > .links_container > .about_us > ul {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+footer > .top_footer > .links_container > .social_profile > .social_profile_container{
+    display: flex;
+    gap:15px;
+}
+footer > .top_footer > .links_container > .social_profile > .social_profile_container button{
+  padding:10px;
+  border:none;
+  border-radius: 5px;
+  outline:none;
+}
+
 footer > .bottom_footer{
     border-top: 1px solid grey;
+    text-align: center;
+    padding: 20px;
+    color: grey;
 }
 
 
