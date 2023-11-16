@@ -1,0 +1,31 @@
+.pricing > .top_container > h1{
+    font-size: 30px;
+    width:30%;
+}
+.pricing > .top_container > p{
+    margin-left:370px;
+}
+.pricing  .button_container{
+    background-color: var(--white);
+    display: flex;
+    gap: 5px;
+    width: 20%;
+    padding: 7px;
+    border-radius: 3px;
+    margin: 3% 50%;
+}
+
+
+.pricing .button_container button{
+    width: 53%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    background-color: transparent;
+}
+
+.pricing .button_container button:nth-child(1){
+    background-color: var(--orange);
+    color: var(--white);
+}
