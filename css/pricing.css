@@ -29,3 +29,12 @@
     background-color: var(--orange);
     color: var(--white);
 }
+
+.divider_line{
+    height: 1px;
+    width: 98%;
+    border-bottom: 1px solid #e1dcdc;
+    margin: 30px 10px;
+    position: absolute;
+    top:350px;
+} 

@@ -1,0 +1,16 @@
+.contact > .top_container {
+    display: flex;
+    margin:0px 70px;
+    /* gap:540px; */
+    gap:200px;
+}
+.contact > .top_container > p:nth-child(1){
+    font-size: 30px;
+    font-weight: bold;
+    width:40rem;
+    border: 1px solid red;
+}
+
+.contact >.top_container > p{
+    display: flex;
+}

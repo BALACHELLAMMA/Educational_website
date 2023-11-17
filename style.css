@@ -80,9 +80,9 @@ footer > .top_footer > .links_container  ul li{
     list-style: none;
 }
 
-header > .navigation_container > nav > ul :hover{
+header > .navigation_container > nav > ul > li > a:hover{
     background-color: rgb(224, 224, 231);
-    padding: 10px;
+    padding: 5px 0px;
     border-radius: 3px;
 }
 
