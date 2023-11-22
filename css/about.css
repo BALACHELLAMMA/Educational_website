@@ -7,10 +7,42 @@
     top:350px;
 } 
 
-.pricing > .top_container > h1{
-    font-size: 30px;
-    width:30%;
+.top_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:20px;
+    padding: 20px 50px 20px 70px;
 }
-.pricing > .top_container > p{
-    margin-left:370px;
+
+.top_container  h1{
+   font-size: 30px;
+}
+
+.top_container  p{
+    color: #565555;
+}
+
+.achievements{
+    padding: 20px 50px 20px 70px;
+}
+
+.achievement_container{
+    display: grid;
+    grid-template-columns: 570px 570px;
+    gap:20px;
+}
+
+.achievement{
+    background-color: #FFFF;
+    border-radius: 5px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.achievement img{
+    height: 100px;
+    /* border: 1px solid red; */
 }

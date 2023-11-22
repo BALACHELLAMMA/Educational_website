@@ -1,0 +1,577 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+
+:root{
+    --white : #FFFFFF;
+    --orange : #FF9500;
+    --black : #262626;
+    --background: #F7F7F8;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro';
+}
+
+body{
+    background: #F7F7F8;
+}
+
+header{
+    max-width: 100%;
+
+}
+
+.top_banner{
+    background:var(--orange);
+    color: var(--white);
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:23px;
+}
+
+header  .sub_header {
+    width:90%;
+    margin: 0 auto;
+    color: var(--black);
+    padding: 20px 0px;
+
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+nav,nav ul,
+.login_sign_up_button_container
+{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+.login_button {
+        background-color: var(--orange);
+        color: var(--white);
+        font-size:20px;
+        border: none;
+        outline:none;
+        border-radius: 8px;
+        width: 117px;
+        padding: 10px;
+}
+
+.hamburger{
+    display: none;
+}
+
+.main_container{
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 100px 0px;
+    display: flex;
+    gap:80px;
+}
+
+.testimonial_container{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    margin: auto 0;
+}
+
+.testimonial_description{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.testimonial_description p,
+.comments_container > p{
+    color:#646363;
+}
+
+
+.testimonial_container > .button_container{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.button_container button{
+    width: 50px;
+    height: 50px;
+    background-color: var(--white);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+
+.login_container{
+    width: 40%;
+    border-radius: 8px;
+    background-color: var(--white);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+.login_container h3{
+    text-align: center;
+}
+
+.login_container p{
+    text-align: center;
+    font-size: 12px;
+    color:#646363;
+}
+
+.input_container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.input_container [type="text"]{
+    padding: 20px;
+    border: 1px solid rgb(213, 211, 211);
+    outline: none;
+    border-radius: 10px;
+    background-color: var(--background);
+}
+.input_container > label {
+    font-weight: bold;
+}
+
+.input_container [type="password"] {
+    border: none;
+    outline:none;
+    background-color: transparent;
+}
+
+.password_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 90px;
+    padding: 20px;
+    /* border: 1px solid rgb(213, 211, 211); */
+    border-radius: 10px;
+    background-color: var(--background);
+}
+
+.forgot_password{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.forgot_password a ,
+.check_box_container{
+    color:#646363;
+}
+
+.login_submit_button{
+    width: 100%;
+    background-color: var(--orange);
+    color: var(--white);
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.google_login_button{
+    width: 100%;
+    background-color: var(--background);
+    color: var(--black);
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+
+.login_link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* color: var(--black); */
+}
+
+.login_link p{
+    color: #000;
+}
+
+.login_link > a {
+    font-size: 13px;
+}
+
+.login_link img{
+    width: 16px;
+}
+
+
+.profile_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    border-radius: 0px 0px 6px 6px ;
+    background-color: #ffffff89;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    font-weight: bold;
+}
+.read_more_button{
+    height:6vh;
+    width: 20%;
+    padding: 6px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-weight:bold;
+    background-color: #f0f0f4fa;
+}
+.comments_container > p{
+    background-color: var(--white);
+    border-bottom: 1px solid rgb(170, 169, 169);
+    border-radius: 6px 6px 0px 0px;
+    padding: 2rem;
+}
+
+.horizontal_line{
+    position: relative;
+    height: 1px;
+    width: 99%;
+    background-color:rgb(217, 214, 214);
+    margin: 15px 0px;
+}
+
+.horizontal_line::before{
+    content: 'Or';
+    padding: 3px;
+    position: absolute;
+    background-color: #FFFFFF;
+    color: #646363;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+footer{
+    width: 100%;
+    background-color: var(--white);
+}
+
+footer > .top_footer {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    /* justify-content:space-between; */
+    padding: 70px;
+}
+
+footer > .top_footer > .contact {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    /* width:100%; */
+}
+
+.sub_container {
+    display: flex;
+    gap:10px;
+}
+
+.links_container {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.links_container  a,
+.forgot_password  p  a{
+    text-decoration: none;
+    color: grey;
+}
+
+.home_about{
+    display: flex;
+    gap: 30px;
+}
+
+.home,
+.about_us ,
+.social_profile{
+   width:160px;
+   display: flex;
+   flex-direction: column;
+   gap:20px;
+}
+
+.home > ul ,
+.about_us > ul {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.top_footer > .links_container > .social_profile > .social_profile_container{
+    display: flex;
+    gap:15px;
+}
+
+.top_footer > .links_container > .social_profile > .social_profile_container button{
+  padding:10px;
+  border:none;
+  border-radius: 5px;
+  outline:none;
+}
+
+footer > .bottom_footer{
+    border-top: 1px solid grey;
+    text-align: center;
+    padding: 20px;
+    color: grey;
+}
+
+
+/*Mobile Screen*/
+
+@media (max-width: 480px){
+    /* Footer styles */
+    footer {
+            width: 100%;
+            background-color: #fff;
+        }
+        
+        .top_footer {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        
+        .contact,
+        .social_profile {
+            width: 100%;
+        }
+
+        .links_container{
+            width: 100%;
+            flex-direction: column;
+        }
+        
+        .contact > .sub_container{
+             display: flex;
+             gap:10px;
+            }
+            
+          .links_container a,
+          .forgot_password p a {
+              color: grey;
+            }
+            
+            .home_about {
+                width: 80%;
+                display: flex;
+                /* flex-wrap: wrap; */
+                gap: 20px;
+            }
+            
+          .home,
+          .about_us,
+          .social_profile {
+              width: 100%;
+            }
+            
+            .home > ul,
+            .about_us > ul {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .top_footer .links_container .social_profile .social_profile_container button {
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                outline: none;
+            }
+            
+            .bottom_footer {
+                border-top: 1px solid grey;
+                text-align: center;
+                padding: 20px;
+                color: grey;
+          }
+
+          nav ul li a{
+              display: none;
+        }
+
+        .login_sign_up_button_container {
+            display: flex;
+            gap: 10px;
+            font-size: 12px;
+        }
+        .hamburger {
+            display: block;
+        }
+    nav ul {
+        gap:10px;
+    }
+    .main_container{
+        flex-direction: column-reverse;
+    }
+    .login_container,
+    .testimonial_container{
+        width: 84%;
+        margin: 0 auto;
+    }
+
+    .testimonial_container .button_container{
+        justify-content: center;
+    }
+    
+    .read_more_button{
+        width: 40%;
+        font-size:10px;
+    }
+
+
+    .password_container{
+        /* width: 30%; */
+        gap: 30px;
+    }
+
+    footer > .top_footer {
+        padding: 30px;
+    }
+}
+
+@media(max-width:430px){
+    .top_banner {
+        padding: 2px;
+        font-size: 10px;
+    }
+    nav{
+        gap: 5px;
+    }
+
+    header .sub_header{
+        padding: 5px;
+    }
+
+    .login_sign_up_button_container a{
+         font-size: 10px;
+    }
+    .login_button{
+        padding: 2px;
+    }
+
+    .profile_container{
+        padding: 1rem;
+    }
+
+    input[type="password"]{
+        width:80%;
+    }
+
+    .password_container{
+        /* width: 30%; */
+        gap: 5px;
+    }
+
+    .contact .sub_container{
+        font-size: 12px;
+    }
+
+    .home_about{
+      font-size:10px;
+    }
+
+    @media (max-width : 340px){
+
+
+        .contact > .sub_container img {
+            width: 20px;
+        }
+
+        .home_about{
+            font-size: 8px;
+        }
+
+        .social_profile {
+            font-size: 8px;
+        }
+
+        .top_footer .social_profile > .social_profile_container  button  img {
+            width: 15px;
+        }
+
+        .bottom_footer{
+            font-size: 10px;
+        }
+    }
+    
+}
+
+/* laptop */
+
+@media (max-width:880px){
+    footer > .top_footer {
+        padding: 30px;
+    }
+
+    .links_container , .home_about{
+        gap: 10px;
+    }
+
+    @media (max-width:795px){
+
+        footer > .top_footer {
+            gap:10px;
+        }
+        .links_container{
+            width: 60%;
+            font-size: 15px;
+        }
+        .contact ,.home_about{
+            font-size: 15px;
+        }
+
+        .social_profile_container > button {
+            padding: 2px;
+        }
+
+        .social_profile_container button img{
+            width: 12px;
+        }
+    }
+}

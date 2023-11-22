@@ -12,6 +12,7 @@
     box-sizing: border-box;
     font-family: 'Be Vietnam Pro';
 }
+
 body{
 background: #F7F7F8;
 }
@@ -272,7 +273,7 @@ main > .testimonial_container > .bottom_container > .profile_container > .profil
 form > .main_container > .forgot_password{
     display: flex;
     justify-content: flex-end;
-    color:#646363
+    color:#646363;
 }
 
 form > .main_container > .sign_up_btn{

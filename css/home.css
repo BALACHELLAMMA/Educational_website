@@ -14,6 +14,105 @@
     font-family: 'Be Vietnam Pro';
 }
 
+
+body{
+background: #F7F7F8;
+}
+
+header > .topBanner{
+    background:var(--orange);
+    color: var(--white);
+    border-radius: 8px;
+    height: 55px;
+    width:1240px;
+    margin: 20px 15px;
+    padding: 14px 0 14px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:23px;
+}
+
+header  .topBanner  p ,img{
+    background: transparent;
+}
+
+header > .navigation_container {
+    height: 55px;
+    width:1240px;
+    margin: 20px;
+    /* border: 2px solid red; */
+    color: black;
+    padding: 20px 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+header > .navigation_container > nav{
+    display: flex;
+    gap:23px;
+}
+
+header > .navigation_container > nav > .logo_container,
+footer > .top_footer > aside > .logo_container{
+    background: var(--orange);
+    height: 54px;
+    width: 54px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+header > .navigation_container > nav > .logo_container > img{
+    height: 24px;
+    width:24px;
+}
+
+header > .navigation_container > nav > ul,
+footer > .top_footer > .links_container  ul li{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* border: 2px solid rgb(174, 255, 0); */
+    list-style: none;
+}
+
+header > .navigation_container > nav > ul > li > a:hover{
+    background-color: rgb(224, 224, 231);
+    padding: 5px 0px;
+    border-radius: 3px;
+}
+
+header > .navigation_container > nav > ul > li > a{
+   text-decoration: none;
+   color:var(--grey)   
+}
+
+.login_btn {
+    background-color: var(--orange);
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    border-radius: 8px;
+    outline:none;
+    height: 55px;
+    width: 117px;
+}
+
+.navigation_container > .buttons_container,
+footer > .top_footer > aside > .sub_container{
+   display: flex;
+   align-items: center;
+   gap: 30px;
+}
+
 .hero_section {
     position: relative;
     margin-top: 120px;
@@ -145,7 +244,10 @@
 
 .benefits_container > .bottom_container {
     display: grid;
-    grid-template-columns: 373px 373px 373px;
+    grid-template-columns: 50% 50% 50%;
+    /* display: grid;
+    grid-area: "a b c";
+    grid-template-columns: 373px 373px 373px; */
     gap:15px;
     margin-top: 20px;
 }
@@ -610,6 +712,68 @@
     border-radius: 10px;
     border: none;
     outline:none;
+}
+footer{
+background-color: var(--white);
+}
+
+footer > .top_footer {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 70px;
+}
+
+footer > .top_footer > aside {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    width:750px;
+}
+
+footer > .top_footer > .links_container {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+footer > .top_footer > .links_container  a,
+form > .main_container > .forgot_password > p > a{
+    text-decoration: none;
+    color: grey;
+}
+footer > .top_footer > .links_container > .home,
+footer > .top_footer > .links_container > .about_us ,
+footer > .top_footer > .links_container > .social_profile{
+   height: 100px;
+   width:160px;
+   display: flex;
+   flex-direction: column;
+   gap:20px;
+}
+
+footer > .top_footer > .links_container > .home > ul ,
+footer > .top_footer > .links_container > .about_us > ul {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+footer > .top_footer > .links_container > .social_profile > .social_profile_container{
+    display: flex;
+    gap:15px;
+}
+footer > .top_footer > .links_container > .social_profile > .social_profile_container button{
+  padding:10px;
+  border:none;
+  border-radius: 5px;
+  outline:none;
+}
+
+footer > .bottom_footer{
+    border-top: 1px solid grey;
+    text-align: center;
+    padding: 20px;
+    color: grey;
 }
 
 
