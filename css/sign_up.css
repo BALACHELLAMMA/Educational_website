@@ -102,8 +102,7 @@ a {
     gap: 10px;
 }
 
-.testimonial_description p,
-.comments_container>p {
+.testimonial_description p {
     color: #646363;
 }
 
@@ -173,7 +172,7 @@ a {
     width: 100%;
     display: flex;
     align-items: center;
-    gap: 90px;
+    gap: calc(100% - 12rem);
     padding: 20px;
     border: 1px solid rgb(213, 211, 211);
     border-radius: 10px;
@@ -225,7 +224,7 @@ a {
     color: #000;
 }
 
-.sign_up_link > a {
+.sign_up_link>a {
     font-size: 13px;
 }
 
@@ -251,9 +250,9 @@ a {
 }
 
 .read_more_button {
-    height: 6vh;
-    width: 20%;
-    padding: 6px;
+    /* height: 6vh; */
+    width: 21%;
+    padding: 10px 8px;
     border-radius: 6px;
     border: none;
     outline: none;
@@ -261,11 +260,12 @@ a {
     background-color: #f0f0f4fa;
 }
 
-.comments_container > p {
+.comments_container>p {
     background-color: var(--white);
     border-bottom: 1px solid rgb(170, 169, 169);
     border-radius: 6px 6px 0px 0px;
     padding: 2rem;
+    color: #646363;
 }
 
 .horizontal_line {
@@ -287,7 +287,6 @@ a {
     transform: translate(-50%, -50%);
 }
 
-
 footer {
     width: 100%;
     background-color: var(--white);
@@ -296,7 +295,7 @@ footer {
 footer>.top_footer {
     display: flex;
     align-items: center;
-    gap: 350px;
+    gap: 360px;
     /* justify-content:space-between; */
     padding: 70px;
 }
@@ -366,6 +365,7 @@ footer>.bottom_footer {
 }
 
 
+
 /*Mobile Screen*/
 
 @media (max-width: 480px) {
@@ -376,11 +376,11 @@ footer>.bottom_footer {
         background-color: #fff;
     }
 
-    .top_footer {
+    footer>.top_footer {
         padding: 20px;
         display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
+        flex-direction: column;
+        gap: 40px;
     }
 
     .contact,
@@ -403,12 +403,6 @@ footer>.bottom_footer {
         color: grey;
     }
 
-    .home_about {
-        width: 80%;
-        display: flex;
-        /* flex-wrap: wrap; */
-        gap: 20px;
-    }
 
     .home,
     .about_us,
@@ -459,7 +453,7 @@ footer>.bottom_footer {
         flex-direction: column-reverse;
     }
 
-    .login_container,
+    .sign_up_container,
     .testimonial_container {
         width: 84%;
         margin: 0 auto;
@@ -473,26 +467,37 @@ footer>.bottom_footer {
         font-size: 10px;
     }
 
+    .profile_container {
+        flex-direction: row;
+    }
+
     .read_more_button {
         width: 40%;
         font-size: 10px;
     }
 
+    /* .input_container [type="text"]{
+        padding: 1em;
+    }
+
+    .password_container {
+        padding: .75em;
+        gap:4em;
+    } */
+
+    .password_container img {
+        width: 15px;
+    }
 
     footer>.top_footer {
         padding: 30px;
     }
 
-    .password_container{
-        gap: 60px;
-    }
-
-    .password_container img {
-       width: 10px;
-    }
 }
 
 @media(max-width:450px) {
+
+    /*header styles*/
     .top_banner {
         padding: 2px;
         font-size: 10px;
@@ -514,128 +519,234 @@ footer>.bottom_footer {
         padding: 2px;
     }
 
+    /*testimonials container*/
     .profile_container {
         padding: 1rem;
     }
 
-    .login_container{
+    /* login container */
+    .sign_up_container {
         padding: 25px;
-    }
-    .contact .sub_container {
-        font-size: 12px;
-    }
-
-    .home_about {
-        font-size: 10px;
     }
 
     input {
         font-size: 15px;
     }
 
-    
-    .login_container{
+    .sign_up_container {
         font-size: 12px;
-    } 
-
-    .password_container{
-        gap: 20px;
     }
-    
+
+    /*footer styles*/
+    .contact .sub_container {
+        font-size: 12px;
+    }
+
     @media (max-width : 380px) {
-        /* input {
-            font-size: 15px;
-        }
-        
-        .login_container{
-            font-size: 10px;
-        } */
-        
-        .input_container [type="text"]{
-            padding: 10px;
-        }
 
-        .password_container {
-            padding: 10px;
-        }
+        /* login_container styles */
 
-       
-        .login_container {
+        .sign_up_container {
             padding: 20px;
             font-size: 10px;
         }
+
+        /* .input_container [type="text"]{
+            padding: 10px;
+        }
+        .password_container {
+            padding: 10px;
+        } */
+
+        /* testimonials container*/
         .read_more_button {
             font-size: 8px;
         }
 
+        /*footer styles*/
         .contact>.sub_container img {
             width: 20px;
         }
-        
-        .home_about {
-            font-size: 8px;
-        }
-        
-        .social_profile {
-            font-size: 8px;
-        }
-        
+
         .top_footer .social_profile>.social_profile_container button img {
             width: 15px;
         }
-        
+
         .bottom_footer {
             font-size: 10px;
         }
-        
-        @media (max-width:346px){
-            .login_link p,.login_link a{
+
+        @media (max-width:346px) {
+
+            /*login_container*/
+            .sign_up_link p,
+            .sign_up_link a {
                 font-size: 7px;
             }
 
-            .login_link img{
+            .sign_up_link img {
                 width: 8px;
             }
 
             .input_container [type="text"],
-            .input_container > .password_container [type="password"]{
+            .input_container>.password_container [type="password"] {
                 font-size: 10px;
             }
 
-            .password_container{
+            .password_container {
                 gap: 40px;
             }
         }
-   
+
     }
 
 }
 
-/* laptop */
-
-@media (max-width:880px) {
+/* laptop 769 - 1024*/
+@media (max-width:1024px) {
     footer>.top_footer {
-        padding: 30px;
+        gap: 120px;
+        padding: 12px;
     }
 
-    .links_container,
+    .read_more_button {
+        font-size: 0.5em;
+    }
+
+    @media (max-width:920px) {
+        footer>.top_footer {
+            gap: 80px;
+        }
+
+        .links_container {
+            gap: 15px;
+        }
+
+        .read_more_button {
+            font-size: .25em;
+        }
+
+    }
+
+
+    /* @media (max-width:810px){
+        .password_container{
+            gap: calc(100%-8rem);
+        }
+
+        .password_container img{
+            width: 12px;
+        }
+    } */
+}
+
+@media (max-width:835px) {
+    footer>.top_footer {
+        gap: 1rem;
+    }
+
     .home_about {
+        gap: 1rem;
+    }
+
+    .read_more_button {
+        width: 20%;
+        padding: 6px;
+    }
+
+    .profile {
         gap: 10px;
     }
 
+    .password_container {
+        padding: 10px;
+    }
+
+    .input_container [type="text"] {
+        padding: 12px;
+    }
+
+    @media (max-width:785px) {
+        .profile_container {
+            gap: 0.75rem;
+        }
+    }
+
+}
+
+/*Tablet 481 - 768 */
+@media (min-width:481px) and (max-width:768px) {
+
+    .sub_header nav ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    footer>.top_footer {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+
+    .main_container {
+        flex-direction: column-reverse;
+    }
+
+    .sign_up_container,
+    .testimonial_container {
+        width: 84%;
+        margin: 0 auto;
+    }
+
+    .profile_container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .read_more_button {
+        width: 100%;
+    }
+
+    @media (max-width:530px) {
+        .home_about {
+            width: 50%;
+        }
+
+        .profile {
+            font-size: 12px;
+        }
+
+
+    }
+}
+
+
+/*desktop 1024 - 1200 */
+@media (min-width:1025px) {
+    footer>.top_footer {
+        gap: 180px;
+    }
+
+    .profile_container {
+        gap: .5rem;
+    }
+}
+
+/* @media (max-width:880px) {
+    footer>.top_footer {
+        padding: 30px;
+    }
     @media (max-width:795px) {
 
         footer>.top_footer {
             gap: 10px;
         }
-
-        .links_container {
-            width: 60%;
-            font-size: 15px;
-        }
-
-        .contact,
-        .home_about {
+        .contact
+        {
             font-size: 15px;
         }
 
@@ -647,4 +758,4 @@ footer>.bottom_footer {
             width: 12px;
         }
     }
-}
+} */
