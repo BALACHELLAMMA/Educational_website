@@ -1,0 +1,78 @@
+
+/*footer styles*/
+footer {
+    width: 100%;
+    background-color: var(--white);
+}
+
+footer>.top_footer {
+    display: flex;
+    align-items: center;
+    gap: 350px;
+    /* justify-content:space-between; */
+    padding: 70px;
+}
+
+footer>.top_footer>.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* width:100%; */
+}
+
+.sub_container {
+    display: flex;
+    gap: 10px;
+}
+
+.links_container {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.links_container a,
+.forgot_password p a {
+    text-decoration: none;
+    color: grey;
+}
+
+.home_about {
+    display: flex;
+    gap: 30px;
+}
+
+.home,
+.about_us,
+.social_profile {
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.home>ul,
+.about_us>ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.top_footer>.links_container>.social_profile>.social_profile_container {
+    display: flex;
+    gap: 15px;
+}
+
+.top_footer>.links_container>.social_profile>.social_profile_container button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+footer>.bottom_footer {
+    border-top: 1px solid grey;
+    text-align: center;
+    padding: 20px;
+    color: grey;
+}

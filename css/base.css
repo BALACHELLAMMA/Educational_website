@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+
+:root {
+    --white: #FFFFFF;
+    --orange: #FF9500;
+    --black: #262626;
+    --background: #F7F7F8;
+    --p_color :  #454444;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro';
+}
+
+body {
+    background: #F7F7F8;
+}

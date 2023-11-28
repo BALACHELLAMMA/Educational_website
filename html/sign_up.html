@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>skill bridge</title>
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/header.css"/>
+    <link rel="stylesheet" href="../css/footer.css"/>
     <link rel="stylesheet" href="../css/sign_up.css" />
     <link rel="icon" href="../img/title_logo_icon.svg" type="image/x-icon">
 </head>
@@ -63,23 +66,39 @@
                 <button><img src="../img/forward_arrow.svg" /></button>
             </div>
         </section>
-        <form class="sign_up_container">
+        <form class="sign_up_container" id="sign_up_form"
+        autocomplete="off">
                     <h3>Sign Up</h3>
                     <p class="create_account">
                         Create an account to unlock exclusive features.
                     </p>
+                    <p id="error_message">error</p>
                     <div class="input_container">
-                        <label>Full Name</label>
-                        <input type="text" placeholder="Enter your Name"/>
+                        <label for="user_name">Full Name</label>
+                        <input type="text" 
+                        placeholder="Enter your Name"
+                        id="user_name"
+                        autocomplete="off"
+                        required/>
                     </div>
                     <div class="input_container">
-                        <label>Email</label>
-                        <input type="text" placeholder="Enter your Email" />
+                        <label for="user_email">Email</label>
+                        <input type="text" 
+                        placeholder="Enter your Email"
+                        id = "user_email"
+                        autocomplete="off" 
+                        required/>
                     </div>
                     <div class="input_container">
-                        <label>Password</label>
+                        <label for="user_password">Password</label>
                         <div class="password_container">
-                            <input type="password" placeholder="Enter you Password" />
+                            <input  type="password" 
+                            placeholder="Enter you Password"
+                            id="user_password"
+                            autocomplete="off"
+                            minlength=8
+                            maxlength="15"
+                            required/>
                             <img src="../img/password_icon.svg" alt="password icon" />
                         </div>
                     </div>
@@ -90,7 +109,8 @@
                         <input type="checkbox" />
                         <label>Remember Me</label>
                     </div>
-                    <button class="sign_up_submit_button" type="submit" formaction="index.html">Sign Up</button>
+                    <button class="sign_up_submit_button" type="submit" 
+                    onclick="validateForm()" >Sign Up</button>
                     <div class="horizontal_line"></div>
                     <button class="google_sign_up_button" onclick="window.location.href ='www.google.com'"><img
                             src="../img/google_logo.svg" />Sign Up with Google</button>
@@ -154,6 +174,6 @@
             <p>© 2023 Skillbridge. All rights reserved.</p>
         </section>
     </footer> 
+    <script src="../src/script.js"></script>
 </body>
-
 </html>

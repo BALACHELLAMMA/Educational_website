@@ -1,0 +1,65 @@
+/* header styles*/
+header {
+    max-width: 100%;
+}
+
+.top_banner {
+    background: var(--orange);
+    color: var(--white);
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 23px;
+}
+
+header .sub_header {
+    width: 90%;
+    margin: 0 auto;
+    color: var(--black);
+    padding: 20px 0px;
+
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+nav,
+nav ul,
+.login_sign_up_button_container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+li {
+    list-style: none;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+li:hover{
+    background-color: rgb(215, 212, 212);
+}
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.login_button {
+    background-color: var(--orange);
+    color: var(--white);
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    width: 117px;
+    padding: 10px;
+}
+
+.hamburger {
+    display: none;
+}
