@@ -5,37 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skillbridge</title>
     <link rel="stylesheet" href="../css/base.css"/>
-    <link rel="stylesheet" href="../css/header.css"/>
-    <link rel="stylesheet" href="../css/footer.css"/>
     <link rel="stylesheet" href="../css/about.css"/>
-    <link rel = "icon" href = "../img/title_logo_icon.svg" type = "image/x-icon"> 
+    <link rel = "icon" href = "../img/title_logo_icon.svg" type = "image/x-icon">
+    <script src="../src/header.js"></script>
+    <script src="../src/footer.js"></script> 
 </head>
 <body>
-    <header>
-        <section class="top_banner">
-            <p>Free Courses 🌟 Sale Ends Soon, Get It Now</p>
-            <img src="../img/stroke.svg" alt="stroke" />
-        </section>
-        <section class="sub_header">
-            <nav>
-                <img src="../img/logo.svg" alt="logo" />
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="courses.html">Courses</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="login_sign_up_button_container">
-                <a href="./sign_up.html">Sign Up</a>
-                <button class="login_button" onclick="window.location.href='../html/index.html'">Login</button>
-                <div class="hamburger">
-                    <img src="../img/hamburger.svg" alt="hamburger"/>
-                </div>
-            </div>
-        </section>
-    </header>
+    <header-component></header-component>
     <!-- <div class="divider_line"></div> -->
 
     <section class="contact">
@@ -92,56 +68,7 @@
                 </div>
             </div>
        </section>
-    <footer>
-        <section class="top_footer">
-            <aside>
-                <div class="logo_container">
-                   <img src="../img/logo.svg" alt="logo"/>
-                </div>
-                <div class="sub_container">
-                    <img src="../img/mail_icon.svg" alt="mail"/>
-                    <p>hello@skillbridge.com</p>
-                </div>
-                <div class="sub_container">
-                    <img src="../img/phone_icon.svg" alt="phone number"/>
-                    <p>+91 91813 23 2309</p>
-                </div>  
-                <div class="sub_container">
-                    <img src="../img/location_icon.svg" alt="location"/>
-                    <p>Somewhere in the world</p>
-                </div>
-            </aside>
-            <div class="links_container">
-                <div class="home">
-                    <h4>Home</h4>
-                    <ul>
-                        <li><a href="./home.html#benefits">Benefits</a></li>
-                        <li><a href="./home.html#our_courses">Our Courses</a></li>
-                        <li><a href="./home.html#our_testimonials">Our Testimonials</a></li>
-                        <li><a href="./home.html#our_faq">Our FAQ</a></li>
-                    </ul>
-                </div>
-                <div class="about_us">
-                    <h4>About Us</h4>
-                    <ul>
-                        <li><a href="./about.html#">Company</a></li>
-                        <li><a href="./about.html#">Achievements</a></li>
-                        <li><a href="./about.html#">Our Goals</a></li>
-                    </ul>
-                </div>
-                <div class="social_profile">
-                    <h4>Social Profiles</h4>
-                    <div class="social_profile_container">
-                       <button><img src="../img/fb_icon.svg"/></button>
-                       <button><img src="../img/twitter_logo.svg"/></button>
-                       <button><img src="../img/linkedin_icon.svg"/></button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="bottom_footer">
-            <p>© 2023 Skillbridge. All rights reserved.</p>
-        </section>
-    </footer>
+       <footer-component></footer-component>
+
 </body>
 </html>    

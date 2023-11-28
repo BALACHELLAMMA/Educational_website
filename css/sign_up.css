@@ -40,10 +40,7 @@
     border-radius: 5px;
 }
 
-#error_message {
-    color:red;
-    visibility:hidden;
-}
+
 
 .sign_up_container {
     width: 40%;
@@ -101,6 +98,14 @@
     background-color: var(--background);
 }
 
+#email_error,
+#password_error{
+    color:red;
+}
+
+input:focus{
+    background-color: var(--background);
+}
 .forgot_password {
     display: flex;
     justify-content: flex-end;
@@ -153,6 +158,8 @@
 .sign_up_link img {
     width: 16px;
 }
+
+
 
 
 .profile_container {
