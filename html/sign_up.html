@@ -57,6 +57,7 @@
                         autocomplete="off"
                         required/>
                     </div>
+                    <p id="name_error"></p>
                     <div class="input_container">
                         <label for="user_email">Email</label>
                         <input type="email" 
@@ -76,7 +77,8 @@
                             minlength=8
                             maxlength="15"
                             required/>
-                            <img src="../img/password_icon.svg" alt="password icon" />
+                            <img src="../img/password_icon.svg" alt="password icon"
+                             id="toggle_image" />
                         </div>
                     </div>
                     <p id="password_error"></p>
@@ -91,12 +93,13 @@
                             src="../img/google_logo.svg" />Sign Up with Google</button>
                     <div class="sign_up_link">
                         <p>Already have an account?</p>
-                        <a href="sign_up.html"> Login</a>
+                        <a href="index.html"> Login</a>
                         <img src="../img/login_arrow.svg" alt="login" /></p>
                     </div>
         </form>
     </main>
 <footer-component></footer-component>
-    <script src="../src/script.js"></script>
+<script src="../src/script.js"></script>
+<script src="../src/toggle.js"></script>
 </body>
 </html>

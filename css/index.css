@@ -68,7 +68,8 @@
     width: 100%;
 }
 
-.input_container [type="text"] {
+.input_container [type="text"],
+.input_container [type="email"] {
     padding: 20px;
     border: 1px solid rgb(213, 211, 211);
     outline: none;
@@ -90,11 +91,27 @@
     width: 100%;
     display: flex;
     align-items: center;
-    gap: calc(100% - 12rem);
+    justify-content: space-between;
+    /* gap: calc(100% - 12rem); */
     padding: 20px;
     border: 1px solid rgb(213, 211, 211);
     border-radius: 10px;
     background-color: var(--background);
+}
+#email_error,
+#password_error{
+    color:red;
+}
+
+input:focus{
+    background-color: var(--background);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
 
 .forgot_password {
@@ -320,7 +337,7 @@
         padding: 1em;
     }
 
-    .password_container {
+    . {
         padding: .75em;
         gap:4em;
     } */
@@ -429,13 +446,14 @@
             }
 
             .input_container [type="text"],
+            .input_container [type="email"],
             .input_container>.password_container [type="password"] {
                 font-size: 10px;
             }
 
-            .password_container {
+            /* .password_container {
                 gap: 40px;
-            }
+            } */
         }
 
     }
@@ -502,7 +520,8 @@
         padding: 10px;
     }
 
-    .input_container [type="text"] {
+    .input_container [type="text"],
+    .input_container [type="email"] {
         padding: 12px;
     }
 

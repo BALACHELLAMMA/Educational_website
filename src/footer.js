@@ -2,6 +2,8 @@ const footerTemplate = document.createElement('template');
 footerTemplate.innerHTML = `
 <link rel="stylesheet" href="../css/base.css"/>
 <link rel="stylesheet" href="../css/footer.css"/>
+<link rel="stylesheet" href="../css/index.css"/>
+
 
 <footer>
 <section class="top_footer">

@@ -3,6 +3,7 @@ headerTemplate.innerHTML = `
 
 <link rel="stylesheet" href="../css/header.css"/>
 <link rel="stylesheet" href="../css/base.css"/>
+<link rel="stylesheet" href="../css/index.css"/>
 
 <header>
 <section class="top_banner">
