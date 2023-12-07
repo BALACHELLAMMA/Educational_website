@@ -599,7 +599,7 @@ input:-webkit-autofill:active{
     }
 }
 
-/* @media (max-width:880px) {
+@media (max-width:880px) {
     footer>.top_footer {
         padding: 30px;
     }
@@ -621,4 +621,4 @@ input:-webkit-autofill:active{
             width: 12px;
         }
     }
-} */
+} 

@@ -8,8 +8,8 @@ footer {
 footer>.top_footer {
     display: flex;
     align-items: center;
-    gap: 350px;
-    /* justify-content:space-between; */
+    /* gap: 350px; */
+    justify-content:space-between;
     padding: 70px;
 }
 
@@ -30,7 +30,9 @@ footer>.top_footer>.contact {
     align-items: flex-start;
     gap: 30px;
 }
-
+li{
+    list-style: none;
+}
 .links_container a,
 .forgot_password p a {
     text-decoration: none;

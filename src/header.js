@@ -1,9 +1,9 @@
 const headerTemplate = document.createElement('template');
 headerTemplate.innerHTML = `
 
-<link rel="stylesheet" href="../css/header.css"/>
-<link rel="stylesheet" href="../css/base.css"/>
-<link rel="stylesheet" href="../css/index.css"/>
+<link rel="stylesheet" href="../style/header.css"/>
+<link rel="stylesheet" href="../style/base.css"/>
+<link rel="stylesheet" href="../style/index.css"/>
 
 <header>
 <section class="top_banner">

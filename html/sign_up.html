@@ -5,101 +5,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>skill bridge</title>
-    <link rel="stylesheet" href="../css/base.css"/>
-    <link rel="stylesheet" href="../css/sign_up.css" />
     <link rel="icon" href="../img/title_logo_icon.svg" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="../assets/css/bootstrap.min.css"/> -->
+    <link rel="stylesheet" href="../style/base.css"/>
+    <link rel="stylesheet" href="../style/sign_up.css"/>
     <script src="../src/header.js"></script>
     <script src="../src/footer.js"></script>
-
 </head>
-
 <body>
-<header-component></header-component>
-    <main class="main_container">
-        <section class="testimonial_container">
-            <div class="testimonial_description">
-                <h1>Students Testimonials</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu
-                    sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.
-                </p>
-            </div>
-            <div class="comments_container">
-                <!-- <div class="comment"> -->
-                    <p>The web design course provided a solid foundation for me. The instructors were knowledgeable and
-                        supportive, and the interactive learning environment was engaging. I highly recommend it!</p>
-                <!-- </div> -->
-                <div class="profile_container">
-                    <div class="profile">
-                        <img src="../img/avatar.svg" alt="avatar" />
-                        <p>Sarah L</p>
-                    </div>
-                    <button class="read_more_button">Read Full Story</button>
-                </div>
-
-            </div>
-            <div class="button_container">
-                <button><img src="../img/backward_arrow.svg" /></button>
-                <button><img src="../img/forward_arrow.svg" /></button>
-            </div>
-        </section>
-        <form class="sign_up_container" id="sign_up_form"
-        autocomplete="off">
-                    <h3>Sign Up</h3>
-                    <p class="create_account">
-                        Create an account to unlock exclusive features.
+    <header-component></header-component>
+        <main class="main_container">
+            <section class="testimonial_container">
+                <div class="testimonial_description">
+                    <h1>Students Testimonials</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu
+                        sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.
                     </p>
-                    <div class="input_container">
-                        <label for="user_name">Full Name</label>
-                        <input type="text" 
-                        placeholder="Enter your Name"
-                        id="user_name"
-                        autocomplete="off"
-                        required/>
-                    </div>
-                    <p id="name_error"></p>
-                    <div class="input_container">
-                        <label for="user_email">Email</label>
-                        <input type="email" 
-                        placeholder="Enter your Email"
-                        id = "user_email"
-                        autocomplete="off" 
-                        required/>
-                    </div>
-                    <p id="email_error"></p>
-                    <div class="input_container">
-                        <label for="user_password" id="password_label">Password</label>
-                        <div class="password_container">
-                            <input  type="password" 
-                            placeholder="Enter you Password"
-                            id="user_password"
-                            autocomplete="off"
-                            minlength=8
-                            maxlength="15"
-                            required/>
-                            <img src="../img/password_icon.svg" alt="password icon"
-                             id="toggle_image" />
+                </div>
+                <div class="comments_container">
+                    <!-- <div class="comment"> -->
+                        <p>The web design course provided a solid foundation for me. The instructors were knowledgeable and
+                            supportive, and the interactive learning environment was engaging. I highly recommend it!</p>
+                    <!-- </div> -->
+                    <div class="profile_container">
+                        <div class="profile">
+                            <img src="../img/avatar.svg" alt="avatar" />
+                            <p>Sarah L</p>
                         </div>
+                        <button class="read_more_button">Read Full Story</button>
                     </div>
-                    <p id="password_error"></p>
-                    <div class="check_box_container">
-                        <input type="checkbox" required/>
-                        <label>Remember Me</label>
-                    </div>
-                    <button class="sign_up_submit_button" type="submit" 
-                    >Sign Up</button>
-                    <div class="horizontal_line"></div>
-                    <button class="google_sign_up_button" onclick="window.location.href ='www.google.com'"><img
-                            src="../img/google_logo.svg" />Sign Up with Google</button>
-                    <div class="sign_up_link">
-                        <p>Already have an account?</p>
-                        <a href="index.html"> Login</a>
-                        <img src="../img/login_arrow.svg" alt="login" /></p>
-                    </div>
-        </form>
-    </main>
-<footer-component></footer-component>
-<script src="../src/script.js"></script>
-<script src="../src/toggle.js"></script>
+    
+                </div>
+                <div class="button_container">
+                    <button><img src="../img/backward_arrow.svg" /></button>
+                    <button><img src="../img/forward_arrow.svg" /></button>
+                </div>
+            </section>
+            <form class="sign_up_container" id="sign_up_form"
+            autocomplete="off">
+                        <h3>Sign Up</h3>
+                        <p class="create_account">
+                            Create an account to unlock exclusive features.
+                        </p>
+                        <div class="input_container">
+                            <label for="user_name">Full Name</label>
+                            <input type="text" 
+                            placeholder="Enter your Name"
+                            id="user_name"
+                            autocomplete="off"
+                            required/>
+                        </div>
+                        <p id="name_error"></p>
+                        <div class="input_container">
+                            <label for="user_email">Email</label>
+                            <input type="email" 
+                            placeholder="Enter your Email"
+                            id = "user_email"
+                            autocomplete="off" 
+                            required/>
+                        </div>
+                        <p id="email_error"></p>
+                        <div class="input_container">
+                            <label for="user_password" id="password_label">Password</label>
+                            <div class="password_container">
+                                <input  type="password" 
+                                placeholder="Enter you Password"
+                                id="user_password"
+                                autocomplete="off"
+                                minlength=8
+                                maxlength="15"
+                                required/>
+                                <img src="../img/password_icon.svg" alt="password icon"
+                                 id="toggle_image" />
+                            </div>
+                        </div>
+                        <p id="password_error"></p>
+                        <div class="check_box_container">
+                            <input type="checkbox" required/>
+                            <label>Remember Me</label>
+                        </div>
+                        <button class="sign_up_submit_button" type="submit" 
+                        >Sign Up</button>
+                        <div class="horizontal_line"></div>
+                        <button class="google_sign_up_button" onclick="window.location.href ='www.google.com'"><img
+                                src="../img/google_logo.svg" />Sign Up with Google</button>
+                        <div class="sign_up_link">
+                            <p>Already have an account?</p>
+                            <a href="index.html"> Login</a>
+                            <img src="../img/login_arrow.svg" alt="login" /></p>
+                        </div>
+            </form>
+        </main>
+    <footer-component></footer-component>
+    <script src="../src/script.js"></script>
+    <script src="../src/toggle.js"></script>
+    <!-- <script src="../assets/js/bootstrap.min.js"></script>     -->
 </body>
 </html>
