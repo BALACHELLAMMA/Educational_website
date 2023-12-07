@@ -10,7 +10,8 @@
     /* gap: 60px; */
 }
 
-.description_container {
+/* .description_container { */
+.jumbotron{    
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
@@ -35,16 +36,17 @@
 .unlock_description p{
     font-weight: bold;
     font-size: 30px;
+    text-align: center;
 }
 
 .unlock_description > p > span{
     color: var(--orange);
 }
 
-.text_container p{
+/* .text_container p{
     text-align: center;
     margin: .75rem 0rem;
-}
+} */
 
 .view_pricing_explore_courses{
     margin-top: 1.5rem;
@@ -215,6 +217,20 @@
     
     #card_img{
         width: 120px;
+    }
+
+    /*benefits*/
+
+    .benefits_description{
+        flex-direction: column;
+        gap:20px;
+    }
+
+    .benefits_description button{
+        width: 30%;
+    }
+    .benefits_container{
+        grid-template-columns:100% ;
     }
 
     /* Footer styles */

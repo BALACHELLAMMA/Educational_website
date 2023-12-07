@@ -18,6 +18,12 @@ const validateEmail = (inputEmail)=> inputEmail.value.match(/^(([^<>()\[\]\\.,;:
 // Function to validate password
 const validatePassword = (inputPassword) => inputPassword.value.match(/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?!.* ).{8,16}$/);
 
+//save form data in local storage
+function saveFormData(formData) {
+    const storedFormData = JSON.parse(localStorage.getItem('formData')) || [];
+    storedFormData.push(formData);
+    localStorage.setItem('formData', JSON.stringify(storedFormData));
+}
 
 
 const signUpFormValidate = (inputName,inputEmail, inputPassword) =>{
@@ -53,9 +59,12 @@ const signUpFormValidate = (inputName,inputEmail, inputPassword) =>{
     }
 
     if(isValid){
-        localStorage.setItem("name",user_name.value);
-        localStorage.setItem("email",user_email.value);
-        localStorage.setItem("password",user_password.value);
+        const formData = {
+            fullName: user_name.value,
+            email: user_email.value,
+            password: user_password.value
+        };
+        saveFormData(formData);   
         window.location.assign("../html/index.html");
     }
   
@@ -83,13 +92,17 @@ const loginFormValidate = (inputEmail, inputPassword) =>{
     }
 
     if(isValid) {
-        const email = localStorage.getItem("email");
-        const password = localStorage.getItem("password");
-        if(user_email.value === email && user_password.value === password){
-            window.location.assign("../html/home.html");
-        }
-        else{
-            alert("incorrect email or password");
+        const userDetails = JSON.parse(localStorage.getItem("formData"));
+        let isMatch = false;
+        for(const user in userDetails) { 
+            if(user_email.value === userDetails[user].email && user_password.value === userDetails[user].password){
+               isMatch = true;
+               window.location.assign("../html/home.html");
+               break;
+            }
+        };
+        if(!isMatch){
+            alert("Incorrect email or password");
         }
     }
   
